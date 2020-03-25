@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ChromeMutilTagTest By n0T_</title>
+		<script type="text/javascript">
+			if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+				window.location.href = "http://rumorsame.top/nosup.html";
+			}
+		</script>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			outline: none;
+		}
+
+		#footer {
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			font-size: 20px;
+			text-align: center;
+			font-size: 12px;
+			margin-bottom: 20px;
+		}
+
+		#main {
+			position: absolute;
+			width: 100%;
+			top: 25%;
+			text-align: center;
+		}
+
+		#main a {
+			margin-left: 50px;
+			margin-right: 50px;
+			padding: 10px;
+			border: 1px #333 solid;
+			border-radius: 10px;
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		#main a:hover {
+			background-color: #333;
+			color: #fff;
+		}
+
+		p {
+			margin-top: 10px;
+			color: #000;
+		}
+
+		a {
+			color: #000000;
+		}
+
+		#btn {
+			padding: 2px;
+			border: 1px #000000 solid;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		#btn:hover {
+			color: #FFFFFF;
+			background-color: #000000
+		}
+
+		#url {
+			display: none;
+		}
+
+		#reurl {
+			display: none;
+			width: 70%;
+			height: 30%;
+			position: absolute;
+			top: 25%;
+			left: 15%;
+			text-align: center;
+			border: 2px #000011 solid;
+			border-radius: 25px;
+			background-color: #fff;
+			z-index: 999;
+		}
+
+		#reurltxt {
+			position: absolute;
+			top: 20%;
+			left: 10%;
+			width: 80%;
+			border: 1px #000000 solid;
+			border-radius: 5px;
+			height: 24px;
+			font-size: 16px;
+			line-height: 16px;
+			text-align: center;
+		}
+
+		#reurl a {
+			position: absolute;
+			float: left;
+			border: 1px #000000 solid;
+			background-color: #fff;
+			border-radius: 5px;
+			padding: 2px;
+			top: 50%;
+			width: 20%;
+			cursor: pointer;
+		}
+
+		#reurl a:hover {
+			background-color: #000000;
+			color: #fff;
+		}
+
+		#left {
+			left: 25%;
+		}
+
+		#right {
+			right: 25%;
+		}
+	</style>
+	<body>
+		<div id="main">
+			<p>
+				<h1>Chrome 多标签页压力测试脚本</h1><br>
+			</p>
+			<p>
+				<h3>当前打开标签页</h3>
+			</p>
+			<p>
+				<h2 id="num">0</h2>
+			</p>
+			<p> <a onclick="startOpen1()">打开1个</a> <a onclick="startOpen5()">打开5个</a> <a onclick="startOpen20()">打开20个</a> </p>
+			<p> <a onclick="startOpen50()">打开50个</a> <a onclick="startOpen100()">打开100个</a> <a onclick="startOpen200()">打开200个</a>
+			</p>
+		</div>
+		<div id="reurl"> <input type="text" id="reurltxt" value="" placeholder="请输入完整URL 如：https://www.bilibili.com" /> <a id="left"
+			 onclick="reurltxt()">确认更改</a><br><a id="right" onclick="reurl()">关闭</a> </div>
+		<div id="footer">
+			<h5>如果只打开一个标签页，-地址栏最右侧-弹出式窗口-不再拦截</h5><br>
+			<p> <a id="btn" onclick="reurl()">更改打开的标签页</a><br> </p>
+			<p>©2020&nbsp;<a href="http://rumorsame.top">但为君故锁清秋</a></p>
+			<p><a href="http://www.beian.miit.gov.cn" id="Record">鲁ICP备20000951-1号</a></p>
+			<p id="url">https://www.bilibili.com</p>
+		</div>
+		<script type="text/javascript">
+			var num = 0;
+
+			function startOpen1() {
+				var i = 0;
+				setInterval(function() {
+					if (i < 1) {
+						url = document.getElementById("url").innerHTML;
+						window.open(url);
+						num += 1;
+						i += 1;
+						document.getElementById("num").innerHTML = num;
+					}
+				}, 750)
+			}
+
+			function startOpen5() {
+				var i = 0;
+				setInterval(function() {
+					if (i < 5) {
+						url = document.getElementById("url").innerHTML;
+						window.open(url);
+						num += 1;
+						i += 1;
+						document.getElementById("num").innerHTML = num;
+					}
+				}, 750)
+			}
+
+			function startOpen20() {
+				var i = 0;
+				setInterval(function() {
+					if (i < 20) {
+						url = document.getElementById("url").innerHTML;
+						window.open(url);
+						num += 1;
+						i += 1;
+						document.getElementById("num").innerHTML = num;
+					}
+				}, 750)
+			}
+
+			function startOpen50() {
+				var i = 0;
+				setInterval(function() {
+					if (i < 50) {
+						url = document.getElementById("url").innerHTML;
+						window.open(url);
+						num += 1;
+						i += 1;
+						document.getElementById("num").innerHTML = num;
+					}
+				}, 750)
+			}
+
+			function startOpen100() {
+				var i = 0;
+				setInterval(function() {
+					if (i < 100) {
+						url = document.getElementById("url").innerHTML;
+						window.open(url);
+						num += 1;
+						i += 1;
+						document.getElementById("num").innerHTML = num;
+					}
+				}, 750)
+			}
+
+			function startOpen200() {
+				var i = 0;
+				setInterval(function() {
+					if (i < 200) {
+						url = document.getElementById("url").innerHTML;
+						window.open(url);
+						num += 1;
+						i += 1;
+						document.getElementById("num").innerHTML = num;
+					}
+				}, 750)
+			}
+		</script>
+		<script type="text/javascript">
+			var stats = 0;
+
+			function reurl() {
+				if (stats == 1) {
+					document.getElementById("reurl").style.display = "none";
+					stats = 0;
+				} else {
+					document.getElementById("reurl").style.display = "inline-block";
+					stats = 1;
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			function reurltxt() {
+				var txt = document.getElementById("reurltxt").value;
+				document.getElementById("url").innerHTML = txt;
+				alert("修改成功，新标签页为"+txt);
+			}
+		</script>
+	</body>
+</html>

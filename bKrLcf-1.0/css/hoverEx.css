@@ -1,0 +1,23 @@
+:hover {
+	background-color: red;
+	color: #FFFFFF;
+	-webkit-animation: toBig 0.3s infinite;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes toBig
+
+/*Safari and Chrome*/
+	{
+	0% {
+		transform: scale(1);
+		/*开始为原始大小*/
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+
+}
