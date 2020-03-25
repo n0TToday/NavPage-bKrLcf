@@ -1,0 +1,66 @@
+.bottomBox {
+	position: absolute;
+}
+
+#searchBox {
+	width: 60%;
+	left: 20%;
+	height: 50px;
+	position: relative;
+	margin-top: 150px;
+}
+
+#search {
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 18px;
+	line-height: 18px;
+	height: 36px;
+	padding: 0 10px;
+	border-radius: 2px;
+	border: 2px #34495E solid;
+	text-align: center;
+}
+
+#search:focus {
+	border: 2px #3498db solid;
+}
+
+#mutilSearchEngine {
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#mutilSearchEngine input {
+	display: none;
+	/* border-bottom: 2px #95a5a6 solid; */
+	cursor: default;
+	margin: 0 5px;
+}
+
+#mutilSearchEngine li {
+	cursor: pointer;
+	display: inline-block;
+	/* border-bottom: 2px #95a5a6 solid; */
+	margin: 0 7px;
+}
+
+#mutilSearchEngine li:active {
+	color: #3498db;
+}
+
+#poemsBox {
+	position: relative;
+	width: 60%;
+	left: 20%;
+	height: 50px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.shici {
+	cursor: default;
+	font-size: 24px;
+}

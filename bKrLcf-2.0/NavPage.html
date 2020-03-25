@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>主页</title>
+		<meta name="author" content="n0T_">
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
+		<link rel="icon" href="./lib/img/icon/icon.png" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/NavPage.css" />
+		<script type="text/javascript">
+			if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+				window.location.href = "http://rumorsame.top/Ban";
+			}
+		</script>
+		<script>
+			$(function() {
+				var winHeight = $(document).scrollTop();
+
+				$(window).scroll(function() {
+					var scrollY = $(document).scrollTop(); // 获取垂直滚动的距离，即滚动了多少
+
+					if (scrollY > 150) {
+						$(".scroll").removeClass("headerHide");
+					} else {
+						$(".scroll").addClass("headerHide");
+					}
+
+					// if (scrollY > winHeight) {
+					//   //如果没滚动到顶部，删除显示类，否则添加显示类
+					//   $(".top-title").removeClass("showed");
+					// } else {
+					//   $(".top-title").addClass("showed");
+					// }
+				});
+			});
+		</script>
+	</head>
+
+	<body onload="choose(1)">
+		<div class="headerBox">
+			<div id="top">
+				<div id="topLogo">但为君故锁清秋</div>
+				<div id="topTag">
+					<ul>
+						<li>首页</li>
+						<li>工具</li>
+						<li>展示</li>
+						<li>项目</li>
+						<li>其他</li>
+						<li>关于</li>
+					</ul>
+				</div>
+			</div>
+			<div class="scroll headerHide">
+				<div id="sLogo">但为君故锁清秋</div>
+				<div id="sTag">
+					<ul>
+						<li>首页</li>
+						<li>工具</li>
+						<li>展示</li>
+						<li>项目</li>
+						<li>其他</li>
+						<li>关于</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="reHeaderBox-1"></div>
+		<div class="reHeaderBox-2"></div>
+		<div class="mainBox">
+
+			<div id="searchBox">
+
+				<input type="text" name="search" id="search" value="" placeholder="回车以搜索" />
+				<button type="button" id="search-btn" style="display: none;" onclick="sbaidu()">
+
+				</button>
+				<div id="mutilSearchEngine">
+
+					<ul>切换引擎：
+						<li id="seli1" onclick="choose(1)">百度</li>
+						<li id="seli2" onclick="choose(2)">Google</li>
+						<li id="seli3" onclick="choose(3)">京东</li>
+						<li id="seli4" onclick="choose(4)">Bilibili</li>
+						<li id="seli5" onclick="choose(5)">阿里矢量图标库</li>
+					</ul>
+					<input type="radio" id="irmse1" name="mse" onclick="secbaidu()" />
+					<input type="radio" id="irmse2" name="mse" onclick="secgoogle()" />
+					<input type="radio" id="irmse3" name="mse" onclick="secjd()" />
+					<input type="radio" id="irmse4" name="mse" onclick="secbilibili()" />
+					<input type="radio" id="irmse5" name="mse" onclick="secaliicon()" />
+				</div>
+			</div>
+			<div id="poemsBox">
+				<p class="shici" id="jinrishici-sentence" style="display: inline-block;">正在加载今日诗词....</p>
+			</div>
+			<div id="navBox"></div>
+		</div>
+		<div class="bottomBox">
+			<div id="webInfo">
+				<br>
+				©2020
+				<a href="http://rumorsame.top">但为君故锁清秋</a>
+				<br>
+				<a href="http://www.beian.miit.gov.cn">鲁ICP备20000951-1号</a>
+				<br>
+			</div>
+		</div>
+	</body>
+	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+	<script src="js/nav-key13.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/nav-meSearch.js" type="text/javascript" charset="utf-8"></script>
+</html>
