@@ -14,31 +14,9 @@
 				window.location.href = "http://rumorsame.top/Ban";
 			}
 		</script>
-		<script>
-			$(function() {
-				var winHeight = $(document).scrollTop();
-
-				$(window).scroll(function() {
-					var scrollY = $(document).scrollTop(); // 获取垂直滚动的距离，即滚动了多少
-
-					if (scrollY > 150) {
-						$(".scroll").removeClass("headerHide");
-					} else {
-						$(".scroll").addClass("headerHide");
-					}
-
-					// if (scrollY > winHeight) {
-					//   //如果没滚动到顶部，删除显示类，否则添加显示类
-					//   $(".top-title").removeClass("showed");
-					// } else {
-					//   $(".top-title").addClass("showed");
-					// }
-				});
-			});
-		</script>
 	</head>
 
-	<body onload="choose(1)">
+	<body onload="change(1)">
 		<div class="headerBox">
 			<div id="top">
 				<div id="topLogo">但为君故锁清秋</div>
@@ -80,17 +58,15 @@
 				<div id="mutilSearchEngine">
 
 					<ul>切换引擎：
-						<li id="seli1" onclick="choose(1)">百度</li>
-						<li id="seli2" onclick="choose(2)">Google</li>
-						<li id="seli3" onclick="choose(3)">京东</li>
-						<li id="seli4" onclick="choose(4)">Bilibili</li>
-						<li id="seli5" onclick="choose(5)">阿里矢量图标库</li>
+						<li id="selibaidu" class="active" onclick="change(1)">百度</li>
+						<li id="seligoogle" class="active" onclick="change(2)">Google</li>
+						<li id="selijd" class="active" onclick="change(3)">京东</li>
+						<li id="seliamazon" class="active" onclick="change(4)">Amazon</li>
+						<li id="selibili" class="active" onclick="change(5)">B站</li>
+						<li id="seliyoutube" class="active" onclick="change(6)">YouTube</li>
+						<li id="selialiicon" class="active" onclick="change(7)">阿里矢量图标库</li>
+						<li id="seligithub" class="active" onclick="change(8)">GitHub</li>
 					</ul>
-					<input type="radio" id="irmse1" name="mse" onclick="secbaidu()" />
-					<input type="radio" id="irmse2" name="mse" onclick="secgoogle()" />
-					<input type="radio" id="irmse3" name="mse" onclick="secjd()" />
-					<input type="radio" id="irmse4" name="mse" onclick="secbilibili()" />
-					<input type="radio" id="irmse5" name="mse" onclick="secaliicon()" />
 				</div>
 			</div>
 			<div id="poemsBox">

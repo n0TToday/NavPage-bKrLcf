@@ -51,6 +51,10 @@
 	color: #3498db;
 }
 
+#mutilSearchEngine .active {
+	color: #3498db;
+}
+
 #poemsBox {
 	position: relative;
 	width: 60%;
