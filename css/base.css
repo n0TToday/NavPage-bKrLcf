@@ -10,12 +10,16 @@
 	text-decoration: none;
 	list-style: none;
 	font-family: "Noto Sans SC", sans-serif;
-	/* border: 1px #c0392b solid; */
+	/*border: 1px #c0392b solid;*/
 }
 
 body {
 	width: 100%;
 	height: 100%;
+}
+
+.hide {
+	display: none;
 }
 
 .headerHide {
@@ -61,6 +65,10 @@ body {
 	cursor: pointer;
 	font-size: 24px;
 	margin: 0 10px;
+}
+
+#topTag li a {
+	cursor: pointer;
 }
 
 .scroll {
@@ -110,15 +118,21 @@ body {
 	margin: 0 10px;
 }
 
-.headerBox li{
+.headerBox li {
 	padding: 0 2px;
 	display: block;
 }
 
 .headerBox li:hover {
-	
+
 
 }
+
+.headerhover {
+	font-weight: bold;
+	color: #3498DB;
+}
+
 /* .headerBox ul li:after{
 	content: "";
 	position: absolute;
