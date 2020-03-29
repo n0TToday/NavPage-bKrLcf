@@ -35,12 +35,14 @@
 .front {
 	transform: perspective(600px) rotateY(0deg);
 	border-radius: 36px;
+	box-shadow: 0 0 20px rgb(220,210,185);
 }
 
 .back {
 	transform: perspective(600px) rotateY(180deg);
 	border: 1px #2980B9 solid;
 	border-radius: 36px;
+	box-shadow: 0 0 20px #3498db;
 }
 
 .back-content {
