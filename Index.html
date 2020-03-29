@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>但为君故锁清秋</title>
+		<link rel="stylesheet" type="text/css" href="css/NavPage.css" />
 		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-		<link rel="stylesheet" href="./css/base.css?200327"/>
+		<link rel="stylesheet" href="./css/base.css?200327" />
 		<script type="text/javascript">
 			if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 				window.location.href = "http://rumorsame.top/Ban";
@@ -36,7 +37,7 @@
 		</script>
 	</head>
 
-	<body>
+	<body onload="change(1)">
 		<div class="headerBox">
 			<div id="top">
 				<div id="topLogo">但为君故锁清秋</div>
@@ -67,10 +68,36 @@
 		</div>
 		<div class="reHeaderBox-1"></div>
 		<div class="reHeaderBox-2"></div>
-		<a href="#" id="returnTop"><svg t="1584674250144" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1142" width="36" height="36"><path d="M534.6 403.5l294.2 294.2c12.5 12.5 32.8 12.5 45.3 0l0 0c12.5-12.5 12.5-32.8 0-45.3L557.3 335.6c-25-25-65.5-25-90.5 0L150 652.4c-12.5 12.5-12.5 32.8 0 45.3l0 0c12.5 12.5 32.8 12.5 45.3 0l294.1-294.2C501.9 391 522.1 391 534.6 403.5z" p-id="1143" fill="#ecf0f1"></path></svg></a>
+		<a href="#" id="returnTop"><svg t="1584674250144" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+			 p-id="1142" width="36" height="36">
+				<path d="M534.6 403.5l294.2 294.2c12.5 12.5 32.8 12.5 45.3 0l0 0c12.5-12.5 12.5-32.8 0-45.3L557.3 335.6c-25-25-65.5-25-90.5 0L150 652.4c-12.5 12.5-12.5 32.8 0 45.3l0 0c12.5 12.5 32.8 12.5 45.3 0l294.1-294.2C501.9 391 522.1 391 534.6 403.5z"
+				 p-id="1143" fill="#ecf0f1"></path>
+			</svg></a>
 		<div class="mainBox">
-			<img src="http://cdn.rumorsame.top/test.png" alt="测试用" />
-			
+			<div id="searchBox">
+
+				<input type="text" name="search" id="search" value="" placeholder="回车以搜索" autofocus />
+				<button type="button" id="search-btn" style="display: none;" onclick="sbaidu()">
+
+				</button>
+				<div id="mutilSearchEngine">
+
+					<ul>切换引擎：
+						<li id="selibaidu" class="active" onclick="change(1)">百度</li>
+						<li id="seligoogle" class="active" onclick="change(2)">Google</li>
+						<li id="selijd" class="active" onclick="change(3)">京东</li>
+						<li id="seliamazon" class="active" onclick="change(4)">Amazon</li>
+						<li id="selibili" class="active" onclick="change(5)">B站</li>
+						<li id="seliyoutube" class="active" onclick="change(6)">YouTube</li>
+						<li id="selialiicon" class="active" onclick="change(7)">阿里矢量图标库</li>
+						<li id="seligithub" class="active" onclick="change(8)">GitHub</li>
+					</ul>
+				</div>
+			</div>
+			<div id="poemsBox">
+				<p class="shici" id="jinrishici-sentence" style="display: inline-block;">正在加载今日诗词....</p>
+			</div>
+			<div id="navBox"></div>
 		</div>
 		<div class="bottomBox">
 			<div id="webInfo">
@@ -83,4 +110,7 @@
 			</div>
 		</div>
 	</body>
+	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+	<script src="js/nav-key13.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/nav-meSearch.js?200327" type="text/javascript" charset="utf-8"></script>
 </html>
