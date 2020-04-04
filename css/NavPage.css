@@ -18,12 +18,12 @@
 	height: 36px;
 	padding: 0 10px;
 	border-radius: 2px;
-	border: 2px #34495E solid;
+	border: 2px #95a5a6 solid;
 	text-align: center;
 }
 
 #search:focus {
-	border: 2px #3498db solid;
+	border: 3px #95a5a6 solid;
 }
 
 #mutilSearchEngine {
@@ -48,11 +48,11 @@
 }
 
 #mutilSearchEngine li:active {
-	color: #3498db;
+	color: #95a5a6;
 }
 
 #mutilSearchEngine .active {
-	color: #3498db;
+	color: #34495e;
 }
 
 #poemsBox {
@@ -67,4 +67,5 @@
 .shici {
 	cursor: default;
 	font-size: 24px;
+	color: #34495e;
 }
