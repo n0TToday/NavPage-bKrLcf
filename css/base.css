@@ -224,3 +224,14 @@ a:active {
 li:active {
 	color: #2980b9;
 }
+
+.alter {
+	animation: alter1 .6s ease-in forwards;
+	animation-delay: 5s;
+}
+
+@keyframes alter1 {
+	to {
+		opacity: 0;
+	}
+}
