@@ -52,6 +52,10 @@ body {
 	cursor: default;
 }
 
+#topLogo img{
+	height: 150px;
+}
+
 #topTag {
 	position: relative;
 	width: 100%;
@@ -92,6 +96,10 @@ body {
 	font-size: 34px;
 	color: #34495e;
 	cursor: default;
+}
+
+#sLogo img{
+	height: 50px;
 }
 
 #sTag {
@@ -226,12 +234,22 @@ li:active {
 }
 
 .alter {
+	position: absolute;
+	display: block;
+	left: 20px;
+	bottom: 20px;
 	animation: alter1 .6s ease-in forwards;
 	animation-delay: 5s;
+	height: 100px;
+	width: 250px;
 }
 
 @keyframes alter1 {
 	to {
-		opacity: 0;
+		opacity: .3;
 	}
+}
+
+.alter p:hover{
+	opacity: 1;
 }

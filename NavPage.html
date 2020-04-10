@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>主页</title>
-		<meta name="author" content="n0T_">
-		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" type="text/javascript"></script>
-		<link rel="icon" href="./lib/img/icon/icon.png"/>
-		<link rel="stylesheet" href="./css/base.css?0409"/>
-		<link rel="stylesheet" type="text/css" href="css/NavPage.css?0409"/>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>但为君故锁清秋</title>
+		<link rel="stylesheet" type="text/css" href="css/NavPage.css?0409" />
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<link rel="stylesheet" href="./css/base.css?0410" />
 		<script type="text/javascript">
 			if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-				window.location.href = "http://rumorsame.top/Ban";
+				window.location.href = "http://rumorsame.top/Ban.html";
 			}
 		</script>
 	</head>
@@ -22,39 +21,17 @@
 		</div>
 		<div class="headerBox">
 			<div id="top">
-				<div id="topLogo">但为君故锁清秋</div>
-				<div id="topTag">
-					<ul>
-						<li id="index"><a href="http://rumorsame.top/">首页</a></li>
-						<li id="tool"><a href="http://rumorsame.top/tool">工具</a></li>
-						<li id="show"><a href="http://rumorsame.top/show">展示</a></li>
-						<li id="project"><a href="http://rumorsame.top/project">项目</a></li>
-						<li id="other"><a href="http://rumorsame.top/other">其他</a></li>
-						<li id="about"><a href="http://rumorsame.top/about">关于</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="scroll headerHide">
-				<div id="sLogo">但为君故锁清秋</div>
-				<div id="sTag">
-					<ul>
-						<li id="index"><a href="http://rumorsame.top/">首页</a></li>
-						<li id="tool"><a href="http://rumorsame.top/tool">工具</a></li>
-						<li id="show"><a href="http://rumorsame.top/show">展示</a></li>
-						<li id="project"><a href="http://rumorsame.top/project">项目</a></li>
-						<li id="other"><a href="http://rumorsame.top/other">其他</a></li>
-						<li id="about"><a href="http://rumorsame.top/about">关于</a></li>
-					</ul>
-				</div>
+				<div id="topLogo"><img src="http://cdn.rumorsame.top/img/logo.png" alt="但为君故锁清秋"></div>
+				
 			</div>
 		</div>
 		<div class="reHeaderBox-1"></div>
 		<div class="reHeaderBox-2"></div>
+		
 		<div class="mainBox">
-
 			<div id="searchBox">
 
-				<input type="text" name="search" id="search" value="" placeholder="回车以搜索" autofocus/>
+				<input type="text" name="search" id="search" value="" placeholder="回车以搜索" autofocus />
 				<button type="button" id="search-btn" style="display: none;" onclick="sbaidu()">
 
 				</button>
@@ -78,7 +55,7 @@
 			</div>
 			<div id="navBox"></div>
 		</div>
-		<div class="bottomBox">
+		<div class="bottomBox" style="position: absolute;">
 			<div id="webInfo">
 				<br>
 				©2020

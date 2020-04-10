@@ -7,33 +7,11 @@
 		<link rel="stylesheet" type="text/css" href="css/NavPage.css?0409" />
 		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-		<link rel="stylesheet" href="./css/base.css?0409" />
+		<link rel="stylesheet" href="./css/base.css?0410" />
 		<script type="text/javascript">
 			if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-				window.location.href = "http://rumorsame.top/Ban";
+				window.location.href = "http://rumorsame.top/Ban.html";
 			}
-		</script>
-		<script>
-			$(function () {
-				var winHeight = $(document).scrollTop();
-
-				$(window).scroll(function () {
-					var scrollY = $(document).scrollTop(); // 获取垂直滚动的距离，即滚动了多少
-
-					if (scrollY > 150) {
-						$(".scroll").removeClass("headerHide");
-					} else {
-						$(".scroll").addClass("headerHide");
-					}
-
-					// if (scrollY > winHeight) {
-					//   //如果没滚动到顶部，删除显示类，否则添加显示类
-					//   $(".top-title").removeClass("showed");
-					// } else {
-					//   $(".top-title").addClass("showed");
-					// }
-				});
-			});
 		</script>
 	</head>
 
@@ -43,39 +21,13 @@
 		</div>
 		<div class="headerBox">
 			<div id="top">
-				<div id="topLogo">但为君故锁清秋</div>
-				<div id="topTag">
-					<ul>
-						<li id="index" class="headerhover"><a href="http://rumorsame.top/">首页</a></li>
-						<li id="tool"><a href="http://rumorsame.top/tool">工具</a></li>
-						<li id="show"><a href="http://rumorsame.top/show">展示</a></li>
-						<li id="project"><a href="http://rumorsame.top/project">项目</a></li>
-						<li id="other"><a href="http://rumorsame.top/other">其他</a></li>
-						<li id="about"><a href="http://rumorsame.top/about">关于</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="scroll headerHide">
-				<div id="sLogo">但为君故锁清秋</div>
-				<div id="sTag">
-					<ul>
-						<li id="index" class="headerhover"><a href="http://rumorsame.top/">首页</a></li>
-						<li id="tool"><a href="http://rumorsame.top/tool">工具</a></li>
-						<li id="show"><a href="http://rumorsame.top/show">展示</a></li>
-						<li id="project"><a href="http://rumorsame.top/project">项目</a></li>
-						<li id="other"><a href="http://rumorsame.top/other">其他</a></li>
-						<li id="about"><a href="http://rumorsame.top/about">关于</a></li>
-					</ul>
-				</div>
+				<div id="topLogo"><img src="http://cdn.rumorsame.top/img/logo.png" alt="但为君故锁清秋"></div>
+				
 			</div>
 		</div>
 		<div class="reHeaderBox-1"></div>
 		<div class="reHeaderBox-2"></div>
-		<a href="#" id="returnTop"><svg t="1584674250144" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
-			 p-id="1142" width="36" height="36">
-				<path d="M534.6 403.5l294.2 294.2c12.5 12.5 32.8 12.5 45.3 0l0 0c12.5-12.5 12.5-32.8 0-45.3L557.3 335.6c-25-25-65.5-25-90.5 0L150 652.4c-12.5 12.5-12.5 32.8 0 45.3l0 0c12.5 12.5 32.8 12.5 45.3 0l294.1-294.2C501.9 391 522.1 391 534.6 403.5z"
-				 p-id="1143" fill="#ecf0f1"></path>
-			</svg></a>
+		
 		<div class="mainBox">
 			<div id="searchBox">
 
